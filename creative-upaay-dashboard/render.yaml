@@ -2,10 +2,6 @@ services:
   - type: web
     name: creative-upaay
     env: node
-    buildCommand: |
-      cd /opt/render/project
-      pwd
-      ls -la
-      npm install
-      npm run build
+    rootDirectory: /
+    buildCommand: npm install && npm run build
     startCommand: npx serve -s dist
