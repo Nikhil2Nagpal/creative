@@ -3,7 +3,8 @@ services:
     name: creative-upaay
     env: node
     buildCommand: |
-      echo "Current directory: $(pwd)"
+      cd /opt/render/project
+      pwd
       ls -la
       npm install
       npm run build
