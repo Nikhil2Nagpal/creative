@@ -2,6 +2,7 @@ services:
   - type: web
     name: creative-upaay-dashboard
     env: node
+    rootDir: ./
     buildCommand: npm install && npm run build
     startCommand: npx serve -s dist
     envVars:
