@@ -7,15 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#6366F1',
-        secondary: '#8B5CF6',
-        success: '#10B981',
-        warning: '#F59E0B',
-        danger: '#EF4444',
+        primary: '#6366F1',    // Indigo
+        secondary: '#8B5CF6',  // Violet
+        success: '#10B981',    // Emerald
+        warning: '#F59E0B',    // Amber
+        danger: '#EF4444',     // Red
       }
     },
   },
   plugins: [],
+  // Force include common classes used in the project
   safelist: [
     'p-6', 'text-3xl', 'font-bold', 'text-gray-800', 'mb-6',
     'flex', 'gap-4', 'bg-white', 'p-4', 'rounded-lg', 'shadow-sm',
@@ -27,5 +28,6 @@ export default {
     'text-gray-500', 'hover:border-gray-400', 'hover:text-gray-700', 'transition', 'mb-4',
     'bg-white', 'border-2', 'border-dashed', 'rounded-lg', 'p-4', 'shadow-lg', 'w-80',
     'font-medium',
+    // Add more as needed
   ]
 }
