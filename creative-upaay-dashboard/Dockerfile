@@ -4,7 +4,7 @@ FROM node:18-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy package files
+# Copy package files first (for caching)
 COPY package*.json ./
 
 # Install dependencies
