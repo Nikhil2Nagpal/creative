@@ -1,8 +1,9 @@
 services:
   - type: web
     name: creative-upaay-dashboard
-    env: docker
-    dockerfilePath: ./Dockerfile
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist
     envVars:
       - key: NODE_ENV
         value: production
